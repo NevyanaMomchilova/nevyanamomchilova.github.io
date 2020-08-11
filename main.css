@@ -11,7 +11,9 @@ body {
   display: grid;
   -ms-grid-rows: 3rem auto 5rem;
       grid-template-rows: 3rem auto 5rem;
-      grid-template-areas: "header" "main" "footer";
+      grid-template-areas: "header"
+ "main"
+ "footer";
   text-align: center;
 }
 
@@ -104,7 +106,7 @@ main p {
 main .welcome {
   height: 750px;
   width: 100%;
-  background: url("images/laptop.jpg");
+  background: url("laptop.jpg");
   background-size: cover;
 }
 

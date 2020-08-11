@@ -1,0 +1,313 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 3rem auto 5rem;
+      grid-template-rows: 3rem auto 5rem;
+      grid-template-areas: "header" "main" "footer";
+  text-align: center;
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  background: #192733;
+  width: 100%;
+  padding: 0.6rem 2rem;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Gotu', sans-serif;
+  z-index: 1;
+}
+
+header .logo a {
+  font-size: 1.14rem;
+  text-decoration: none;
+  color: white;
+}
+
+header .logo a:hover {
+  color: #d6aefc;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 1rem;
+}
+
+header nav ul li a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: white;
+}
+
+header nav ul li a:hover {
+  color: #d6aefc;
+  border-bottom: 1px solid #d6aefc;
+}
+
+main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+}
+
+main h1 {
+  font-family: 'Gotu', sans-serif;
+  font-weight: 400;
+  font-size: 2.2rem;
+  background: -webkit-linear-gradient(#6d6d6d, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+main h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+main p {
+  font-Size: 1.2rem;
+  font-weight: 300;
+}
+
+main .welcome {
+  height: 750px;
+  width: 100%;
+  background: url("images/laptop.jpg");
+  background-size: cover;
+}
+
+main .welcome .welcome-text {
+  padding: 240px 0 0 0;
+}
+
+main .welcome .welcome-text h1 {
+  font-size: 4rem;
+  background: -webkit-linear-gradient(black, #c424fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+main .welcome .welcome-text h4 {
+  margin-top: 12px;
+  color: #6d6d6d;
+}
+
+main .about {
+  padding: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .about .info {
+  padding: 0 20px 0 0;
+  width: 40%;
+  height: 100%;
+}
+
+main .about .info img {
+  width: 250px;
+  border-radius: 50%;
+  margin: 2rem 0;
+}
+
+main .about .toolkit {
+  padding: 0 0 0 90px;
+  width: 60%;
+  height: 100%;
+}
+
+main .about .toolkit .toolkit-items {
+  margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  list-style: none;
+}
+
+main .about .toolkit .toolkit-items li {
+  margin: 0 2rem 4rem 2rem;
+  width: 90px;
+  height: 90px;
+}
+
+main .about .toolkit .toolkit-items li p {
+  font-size: 1rem;
+  color: #6d6d6d;
+}
+
+main .portfolio {
+  background: #ebecee;
+  padding: 100px;
+}
+
+main .portfolio .projects {
+  margin: 2rem 0;
+}
+
+main .portfolio .projects .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  margin-bottom: 3rem;
+  background: white;
+  height: 400px;
+}
+
+main .portfolio .projects .project img {
+  float: left;
+  width: 700px;
+  height: 360px;
+  border: 1.5px solid white;
+  border-radius: 4px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 2rem;
+  -webkit-box-shadow: 0px 1px 6px #6d6d6d;
+          box-shadow: 0px 1px 6px #6d6d6d;
+}
+
+main .portfolio .projects .project .project-info {
+  float: right;
+  margin: 2rem;
+  position: relative;
+}
+
+main .portfolio .projects .project .project-info h4 {
+  font-weight: bold;
+  margin-bottom: 2rem;
+  background: -webkit-linear-gradient(#2f64fc, #c424fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+main .portfolio .projects .project .project-info p {
+  margin-bottom: 1.5rem;
+}
+
+main .portfolio .projects .project .project-info .p-color {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #6d6d6d;
+}
+
+main .portfolio .projects .project .project-info .button {
+  position: absolute;
+  bottom: 0;
+}
+
+main .portfolio .projects .project .project-info .button a {
+  text-decoration: none;
+}
+
+main .portfolio .projects .project .project-info .button button {
+  background: white;
+  color: black;
+  color: #8f1bb9;
+  border: 1.5px solid #8f1bb9;
+  border-radius: 4px;
+  height: 45px;
+  width: 120px;
+  padding: 10px;
+  margin: 0 0.8rem;
+  font-size: 15px;
+}
+
+main .portfolio .projects .project .project-info .button button:hover {
+  color: #153f8b;
+  border-color: #153f8b;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 6px #ab20dd;
+          box-shadow: 0px 0px 6px #ab20dd;
+}
+
+main .portfolio .projects .project .project-info .button button:focus {
+  outline: none;
+}
+
+main .contact {
+  padding: 100px;
+}
+
+main .contact div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2rem 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .contact div a {
+  text-decoration: none;
+  margin: 3rem 2rem;
+  border: 1.5px solid white;
+  border-radius: 50%;
+  padding: 1xrem;
+}
+
+main .contact div a h4 {
+  margin: 0 2rem 0 2rem;
+  color: #8f1bb9;
+}
+
+main .contact div a:hover h4 {
+  color: #153f8b;
+  text-shadow: 0px 1px 3px #ab20dd;
+}
+
+footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  background: #192733;
+  color: white;
+  padding: 80px;
+}
+/*# sourceMappingURL=main.css.map */
